@@ -1,0 +1,10 @@
+---
+# tasks file for kubernetes
+- name: install docker to start with containers
+  apt:
+   name: docker
+   state: present
+- name: create a file
+  file:
+   name: /etc/docker/daemon.json
+   
